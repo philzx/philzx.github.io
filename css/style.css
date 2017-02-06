@@ -1,0 +1,288 @@
+/* Navigation Bar Starts Here */
+header {
+  height: 80px;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 5px 10px;
+  z-index: 1;
+}
+
+.website-name {
+  float: left;
+  font-family: 'Russo One', sans-serif;
+  font-size: 40px;
+  line-height: 80px;
+}
+
+.website-name>a:hover {
+  text-decoration: none;
+  color: #050517;
+}
+
+.nav {
+  float: right;
+  font-family: 'Russo One', sans-serif;
+  font-size: 20px;
+  line-height: 80px;
+}
+
+.nav ul li a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav ul li a:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  background-color: #0E79B2;
+  width: 0;
+  height: 3px;
+  transition: all 0.5s;
+}
+
+.nav ul li a:hover {
+  color: #0E79B2;
+}
+
+.nav ul li a:hover:after {
+  width: 100%;
+}
+
+li {
+  float: left;
+  margin-left: 40px;
+  list-style: none;
+  color: #0E79B2;
+}
+/* Navigation Bar Ends Here */
+
+/* Video Area Starts Here */
+body {
+  background-color: #0E79B2;
+}
+
+video {
+  padding-top: 80px;
+  min-width: 100%;
+  width: auto;
+  opacity: 10%;
+}
+
+#video-all {
+  min-width: 100%;
+  min-height: 700px;
+  max-height: 950px;
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  z-index: -1;
+}
+
+.video-text {
+  position: absolute;
+  text-align: center;
+  top: 32%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.video-text h1, .video-text h2 {
+  color: white;
+  text-shadow: red;
+}
+
+.video-text h1 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 100px;
+}
+
+.text-border {
+  padding-bottom: 15px;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  border-width: 10px;
+}
+
+/* Video Area Ends Here */
+
+/* About Area Starts Here */
+
+#main-content {
+  margin-top: 25px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-pic{
+  width: 200px;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 10%;
+}
+
+.about-text {
+  margin-left: 100px;
+  display: block;
+  color: white;
+  font-family: 'Open Sans', serif;
+  font-size: 20px;
+  line-height: 2.5em;
+}
+
+.skills {
+  font-family: 'Russo One', sans-serif;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 10px;
+}
+
+.coding {
+  max-width: 100%;
+  padding-left: 0px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 200px;
+}
+
+.coding-languages {
+  display: inline;
+  margin-top: 40px;
+}
+
+.html5 {
+  width: 213px;
+  height: 300px;
+}
+
+.css3 {
+  width: 213px;
+  height: 300px;
+  margin-left: 80px;
+}
+
+.js {
+  width: 212px;
+  height: 300px;
+  margin-left: 80px;
+}
+
+.bootstrap {
+  width: 240px;
+  height: 240px;
+  vertical-align: bottom;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+.jquery {
+  width: 300px;
+  height: auto;
+  margin-left: 80px;
+  line-height: 40px;
+  margin-top: 50px;
+}
+
+/* About Area Ends Here */
+
+/* Portfolio Area Starts Here */
+.portfolio-area {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background-color: white;
+  min-width: 100%;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-family: 'Russo One', sans-serif;
+  font-size: 70px;
+  color: #0E79B2;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.portfolio {
+  margin-top: 60px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  display: inline-block;
+  border-style: solid;
+  border-width: medium;
+  border-color: #0E79B2;
+  border-radius: 10px;
+  max-width: 100%;
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -o-transition: all 1s ease; /* IE 9 */
+  -ms-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.portfolio:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+/* Portfolio Area Ends Here */
+
+/* Contact Area Starts Here */
+
+.contact-area {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.contact-me {
+  font-family: 'Russo One', sans-serif;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+}
+
+.contact-icons {
+  max-width: 100%;
+  text-align: center;
+  font-size: 70px;
+}
+
+.fa {
+  color: white;
+}
+
+.fa:hover {
+  color: #050517;
+}
+
+.coding-languages {
+  display: inline;
+  margin-top: 40px;
+}
+
+.contact-form {
+  display: block;
+}
